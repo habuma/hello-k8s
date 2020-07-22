@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: hello-k8s
+
+greeting:
+  message: Hello world!
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - info
+        - health
+        - env
